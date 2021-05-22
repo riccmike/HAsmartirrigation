@@ -1,0 +1,123 @@
+{
+  "config": {
+    "abort": {
+      "single_instance_allowed": "Solo una singola configurazione di Smart Irrigation è permessa."
+    },
+    "error": {
+      "auth": "Chiave Open Weather API non corretta",
+      "name": "Definisci un nome univoco pe questa istanza.",
+      "reference_evapotranspiration_problem": "Controlla i tuoi valori di evapotraspirazione di riferimento - devono essere numeri decimali e almeno uno diverso da zero.",
+      "sensornotfound": "Uno o più sensori specificati non esisto"
+    },
+    "title": "Smart Irrigation",
+    "step": {
+      "user": {
+        "title": "Smart Irrigation - Passo 1/7: Nome e calcolo dell'evapotraspirazione",
+        "description": "Se hai bisogno di aiuto con la configurazione, guarda su https://github.com/jeroenterheerdt/HASmartIrrigation",
+        "data": {
+          "name": "Nome univo per l'istanza",
+          "calculate_ET_value": "Calcola il valore di evapotraspirazione (ET) (disabilitare per specificare un sensore)."
+        }
+      },
+      "step0": {
+        "title": "Smart Irrigation - Passo 2/7: Sensore di evapotraspirazione",
+        "description": "Se hai bisogno di aiuto con la configurazione, guarda su https://github.com/jeroenterheerdt/HASmartIrrigation",
+        "data": {
+          "sensor_et": "Sensore che misura l'evapotraspirazione (ET) (mm, inch)",
+          "sensor_precipitation": "Sensore che misura la precipitazione totale (pioggia/neve) (mm, inch)"
+        }
+      },
+      "step1": {
+        "title": "Smart Irrigation - Passo 3/7: Fonti",
+        "description": "Se hai bisogno di aiuto con la configurazione, guarda su https://github.com/jeroenterheerdt/HASmartIrrigation",
+        "data": {
+          "use_owm_precipitation": "Usa OpenWeatherMap per le precipitazioni",
+          "use_owm_temperature": "Usa OpenWeatherMap per la temperatuta",
+          "use_owm_min_temperature": "Usa OpenWeatherMap per la temperatura minima",
+          "use_owm_max_temperature": "Usa OpenWeatherMap per la temperatura massima",
+          "use_owm_dewpoint": "Usa OpenWeatherMap per il punto di ruggiada",
+          "use_owm_pressure": "Usa OpenWeatherMap per la pressione",
+          "use_owm_humidity": "Usa OpenWeatherMap per l'umidità",
+          "use_owm_windspeed": "Usa OpenWeatherMap per la velocità del vento",
+          "calculate_solar_radiation": "Calcolare la Radiazione Solare (disabilitare per specificazre un sensore)"
+        }
+      },
+      "step2": {
+        "title": "Smart Irrigation - Passo 4/7: Sensori",
+        "description": "Se hai bisogno di aiuto con la configurazione, guarda su https://github.com/jeroenterheerdt/HASmartIrrigation",
+        "data": {
+          "sensor_precipitation": "Sensore che misura la precipitazione gionrnaliera totale (pioggia/neve) (mm, inch)",
+          "sensor_temperature": "Sensore che misura temperatura (C, F)",
+          "sensor_dewpoint": "Sensore che misura punto di ruggiada (C, F)",
+          "sensor_humidity": "Sensore che misura umidità (%)",
+          "sensor_max_temperature": "Sensore che misura la temperatura massima (C, F)",
+          "sensor_min_temperature": "Sensore che misura la temperatura minima (C, F)",
+          "sensor_pressure": "Sensore che misura la pressione (mbar, hPa, psi) ",
+          "sensor_windspeed": "Sensore che misura la velocità del vento (km/h, mph) a 2 metri da terra",
+          "sensor_solar_radiation": "Sensore che misura la radiazione solare (W/m2, W/sq ft)"
+        }
+      },
+      "step3": {
+        "title": "Smart Irrigation - Passo 5/7: Open Weather Map API",
+        "description": "Se hai bisogno di aiuto con la configurazione, guarda su https://github.com/jeroenterheerdt/HASmartIrrigation",
+        "data": {
+          "api_key": "Chiave per le API Open Weather Map"
+        }
+      },
+      "step4": {
+        "title": "Smart Irrigation - Passo 6/7: valori di riferimento per l'evotraspirazione",
+        "description": "Se hai bisogno di aiuto con la configurazione, guarda su https://github.com/jeroenterheerdt/HASmartIrrigation",
+        "data": {
+          "reference_evapotranspiration_1": "Evotraspirazione di riferimento per Gennaio",
+          "reference_evapotranspiration_2": "Evotraspirazione di riferimento per Febbraio",
+          "reference_evapotranspiration_3": "Evotraspirazione di riferimento per Marzo",
+          "reference_evapotranspiration_4": "Evotraspirazione di riferimento per Aprile",
+          "reference_evapotranspiration_5": "Evotraspirazione di riferimento per Maggio",
+          "reference_evapotranspiration_6": "Evotraspirazione di riferimento per Giugno",
+          "reference_evapotranspiration_7": "Evotraspirazione di riferimento per Luglio",
+          "reference_evapotranspiration_8": "Evotraspirazione di riferimento per Agosto",
+          "reference_evapotranspiration_9": "Evotraspirazione di riferimento per Settembre",
+          "reference_evapotranspiration_10": "Evotraspirazione di riferimento per Ottobre",
+          "reference_evapotranspiration_11": "Evotraspirazione di riferimento per Novembre",
+          "reference_evapotranspiration_12": "Evotraspirazione di riferimento per Dicembre"
+        }
+      },
+      "step5": {
+        "title": "Smart Irrigation - Passo 7/7: Configurazione del sistema di irrigazione",
+        "description": "Se hai bisogno di aiuto con la configurazione, guarda su https://github.com/jeroenterheerdt/HASmartIrrigation",
+        "data": {
+          "number_of_sprinklers": "Numero di irrigatori",
+          "flow": "Flusso per Irrigatore in gpm o l/min",
+          "area": "Area in sq ft o m2"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "user": {
+        "data": {
+          "number_of_sprinklers": "Numero di irrigatori",
+          "flow": "Flusso per Irrigatore in gpm o l/min",
+          "area": "Area in sq ft o m2",
+          "lead_time": "Lead time, tempo da aggiungere per modificare il tempo di esecuzione (secondi).",
+          "change_percent": "Percentuale per cambiare il tempo di esecuzione (100 segnifica nessuna modifica).",
+          "maximum_duration": "Massima durata, include anche il tempo di carica (-1 no massimo) (secondi).",
+          "force_mode_duration": "Numeri di secondi di irrgazione in force mode.",
+          "show_units": "Visualizza le unità di misura negli attributi delle entità.",
+          "auto_refresh": "Abilita o disabilita l'aggiornamento automatico al tempo configurato sotto.",
+          "auto_refresh_time": "Ora locale da pianificare l'aggiornamento (se abilitato).",
+          "initial_update_delay": "Ritardo da applicare prima di un aggionramento dei sensori dopo un reboot (secondi).",
+          "coastal": "Coastal (air masses are influenced by a nearby water body)",
+          "estimate_solrad_from_temp": "Stima della irraggiamento solare dalla temperatura."
+        }
+      }
+    },
+    "error": {
+      "auto_refresh_time_error": "Valore non valido specificato per il tempo di aggionramento.",
+      "maximum_duration_error": "Massima durata deve essere >=-1.",
+      "initial_update_delay_error": "Il ritardo iniziale deve essere >=0."
+    }
+  },
+  "title": "Smart Irrigation"
+}
